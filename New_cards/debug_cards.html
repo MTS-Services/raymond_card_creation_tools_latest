@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Cards - Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .debug-section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .card-item { border: 1px solid #ddd; padding: 10px; border-radius: 8px; background: white; }
+        .card-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 4px; }
+        .error { color: red; background: #ffe6e6; padding: 10px; border-radius: 4px; }
+        .success { color: green; background: #e6ffe6; padding: 10px; border-radius: 4px; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin: 5px; }
+        button:hover { background: #0056b3; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Cards - Test Page</h1>
+    
+    <div class="debug-section">
+        <h2>Step 1: Test PHP Backend</h2>
+        <p>First, let's check if your PHP backend is working:</p>
+        <button onclick="testPHP()">Test PHP Backend</button>
+        <div id="phpStatus" class="status"></div>
+    </div>
+
+    <div class="debug-section">
+        <h2>Step 2: Load Cards</h2>
+        <p>Try to load the cards from your folder:</p>
+        <button onclick="loadCards()">Load Cards</button>
+        <div id="loadStatus" class="status"></div>
+    </div>
+
+    <div class="debug-section">
+        <h2>Step 3: Display Cards</h2>
+        <p>Cards found will appear here:</p>
+        <div id="cardGrid" class="card-grid"></div>
+    </div>
+
+    <div class="debug-section">
+        <h2>Step 4: Manual Test</h2>
+        <p>Check if these files exist in your folder:</p>
+        <ul id="fileList"></ul>
+    </div>
+
+    <script>
+        // Test PHP backend
+        async function testPHP() {
+            const status = document.getElementById('phpStatus');
+            status.innerHTML = 'Testing PHP backend...';
+            
+            try {
+                const response = await fetch('get_cards.php');
+                const text = await response.text();
+                
+                if (response.ok) {
+                    status.innerHTML = '<div class="success">✅ PHP Backend Working! Response received.</div>';
+                    status.innerHTML += '<details><summary>Response Details:</summary><pre>' + text + '</pre></details>';
+                } else {
+                    status.innerHTML = '<div class="error">❌ PHP Backend Error: ' + response.status + '</div>';
+                    status.innerHTML += '<pre>' + text + '</pre>';
+                }
+            } catch (error) {
+                status.innerHTML = '<div class="error">❌ Network Error: ' + error.message + '</div>';
+            }
+        }
+
+        // Load cards
+        async function loadCards() {
+            const status = document.getElementById('loadStatus');
+            const cardGrid = document.getElementById('cardGrid');
+            
+            status.innerHTML = 'Loading cards...';
+            cardGrid.innerHTML = '';
+            
+            try {
+                const response = await fetch('get_cards.php');
+                const data = await response.json();
+                
+                if (data.success && data.cards) {
+                    status.innerHTML = '<div class="success">✅ Found ' + data.cards.length + ' cards!</div>';
+                    displayCards(data.cards);
+                } else {
+                    status.innerHTML = '<div class="error">❌ No cards found or error in response</div>';
+                    status.innerHTML += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                }
+            } catch (error) {
+                status.innerHTML = '<div class="error">❌ Error loading cards: ' + error.message + '</div>';
+            }
+        }
+
+        // Display cards
+        function displayCards(cards) {
+            const cardGrid = document.getElementById('cardGrid');
+            
+            cards.forEach(function(card) {
+                const cardItem = document.createElement('div');
+                cardItem.className = 'card-item';
+                cardItem.innerHTML = `
+                    <img src="${card.thumbnail || card.path}" alt="${card.name}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4='">
+                    <h4>${card.name}</h4>
+                    <p>Size: ${card.size || 'Unknown'}</p>
+                    <p>Path: ${card.path}</p>
+                    <p>Thumbnail: ${card.thumbnail || 'None'}</p>
+                `;
+                cardGrid.appendChild(cardItem);
+            });
+        }
+
+        // Check for common image files
+        function checkFiles() {
+            const fileList = document.getElementById('fileList');
+            const commonExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+            const files = [
+                '1000001742.jpg', '1000001743.jpg', '1000001744.jpg', '1000001745.jpg',
+                '1000001746.jpg', '1000001747.jpg', '1000001748.jpg', '1000001749.jpg',
+                '1000001753.jpg', '1000001754.jpg', '1000001755.jpg', '1000001756.jpg',
+                '1000001757.jpg', '1000001758.jpg', '1000001759.jpg', '1000001760.jpg',
+                '1000001761.jpg', '1000001762.jpg', '1000001768.jpg', '1000001769.jpg'
+            ];
+            
+            fileList.innerHTML = '';
+            files.forEach(file => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${file}</strong> - <a href="${file}" target="_blank">Test Link</a>`;
+                fileList.appendChild(li);
+            });
+        }
+
+        // Run on page load
+        window.onload = function() {
+            checkFiles();
+        };
+    </script>
+</body>
+</html>
