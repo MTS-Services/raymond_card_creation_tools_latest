@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ID Cards - Redirecting...</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .redirect-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .redirect-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .redirect-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .redirect-subtext {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="redirect-icon">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="redirect-text">Redirecting to Admin Login...</div>
+        <div class="redirect-subtext">Please wait while we redirect you to the secure login page.</div>
+    </div>
+    
+    <script>
+        // Redirect to login page after 2 seconds
+        setTimeout(function() {
+            window.location.href = 'login.php';
+        }, 2000);
+    </script>
+</body>
+</html>
+
+
