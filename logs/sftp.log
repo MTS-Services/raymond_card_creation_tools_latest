@@ -1,0 +1,260 @@
+Jan 20 22:09:49 10.71.60.0 a2540500 Connection from 10.71.60.0 port 48300 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:09:53 10.71.60.0 a2540500 Failed password for a2540500 from 10.71.60.0 port 48300 ssh2
+Jan 20 22:10:01 10.71.60.0 a2540500 Connection from 10.71.60.0 port 22764 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:10:04 10.71.60.0 a2540500 Failed password for a2540500 from 10.71.60.0 port 22764 ssh2
+Jan 20 22:10:39 10.71.60.0 a2540500 Connection from 10.71.60.0 port 22126 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:10:43 10.71.60.0 a2540500 Failed password for a2540500 from 10.71.60.0 port 22126 ssh2
+Jan 20 22:11:06 10.71.60.0 a2540500 Connection from 10.71.60.0 port 59904 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:11:08 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 59904 ssh2
+Jan 20 22:11:08 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 59904 id 0
+Jan 20 22:11:08 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 22:11:30 10.71.60.0 a2540500 Connection from 10.71.60.0 port 20954 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:11:31 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 20954 ssh2
+Jan 20 22:11:32 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 20954 id 0
+Jan 20 22:11:32 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 22:11:34 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags READ mode 0666
+Jan 20 22:11:36 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 168910 written 0
+Jan 20 22:11:36 10.71.60.0 a2540500 [10.71.60.0|get|2|168910|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 22:12:37 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 20954
+Jan 20 22:12:37 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 22:12:53 10.71.60.0 a2540500 Connection from 10.71.60.0 port 15034 on 74.208.59.93 port 22 rdomain ""
+Jan 20 22:12:54 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 15034 ssh2
+Jan 20 22:12:55 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 15034 id 0
+Jan 20 22:12:55 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 22:12:57 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 22:12:58 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168909
+Jan 20 22:12:58 10.71.60.0 a2540500 [10.71.60.0|put|1|168909|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 22:12:59 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-22:12:48
+Jan 20 22:13:59 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 15034
+Jan 20 22:13:59 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:35:03 10.71.60.0 a2540500 Connection from 10.71.60.0 port 65446 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:35:05 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 65446 ssh2
+Jan 20 23:35:05 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 65446 id 0
+Jan 20 23:35:05 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:35:08 10.71.60.0 a2540500 open "/New_cards/card_creation_image.php" flags READ mode 0666
+Jan 20 23:35:09 10.71.60.0 a2540500 close "/New_cards/card_creation_image.php" bytes read 38165 written 0
+Jan 20 23:35:09 10.71.60.0 a2540500 [10.71.60.0|get|1|38165|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f696d6167652e706870|]
+Jan 20 23:35:36 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags READ mode 0666
+Jan 20 23:35:37 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 168909 written 0
+Jan 20 23:35:37 10.71.60.0 a2540500 [10.71.60.0|get|1|168909|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:36:22 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:36:23 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168908
+Jan 20 23:36:23 10.71.60.0 a2540500 [10.71.60.0|put|1|168908|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:36:24 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:36:10
+Jan 20 23:37:24 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:37:24 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 65446
+Jan 20 23:41:08 10.71.60.0 a2540500 Connection from 10.71.60.0 port 19372 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:41:09 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 19372 ssh2
+Jan 20 23:41:10 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 19372 id 0
+Jan 20 23:41:10 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:41:13 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags READ mode 0666
+Jan 20 23:41:15 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 168908 written 0
+Jan 20 23:41:15 10.71.60.0 a2540500 [10.71.60.0|get|2|168908|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:42:15 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:42:15 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 19372
+Jan 20 23:42:20 10.71.60.0 a2540500 Connection from 10.71.60.0 port 17824 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:42:21 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 17824 ssh2
+Jan 20 23:42:22 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 17824 id 0
+Jan 20 23:42:22 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:42:24 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:42:25 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 169746
+Jan 20 23:42:25 10.71.60.0 a2540500 [10.71.60.0|put|1|169746|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:42:26 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:42:14
+Jan 20 23:43:26 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 17824
+Jan 20 23:43:26 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:43:49 10.71.60.0 a2540500 Connection from 10.71.60.0 port 27468 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:43:50 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 27468 ssh2
+Jan 20 23:43:51 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 27468 id 0
+Jan 20 23:43:51 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:43:55 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:43:56 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168908
+Jan 20 23:43:56 10.71.60.0 a2540500 [10.71.60.0|put|1|168908|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:43:57 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:43:45
+Jan 20 23:44:57 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 27468
+Jan 20 23:44:57 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:46:12 10.71.60.0 a2540500 Connection from 10.71.60.0 port 30370 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:46:13 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 30370 ssh2
+Jan 20 23:46:14 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 30370 id 0
+Jan 20 23:46:14 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:46:16 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:46:17 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168909
+Jan 20 23:46:17 10.71.60.0 a2540500 [10.71.60.0|put|1|168909|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:46:18 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:46:00
+Jan 20 23:47:18 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 30370
+Jan 20 23:47:18 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:49:04 10.71.60.0 a2540500 Connection from 10.71.60.0 port 19850 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:49:05 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 19850 ssh2
+Jan 20 23:49:06 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 19850 id 0
+Jan 20 23:49:06 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:49:07 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:49:09 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168944
+Jan 20 23:49:09 10.71.60.0 a2540500 [10.71.60.0|put|2|168944|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:49:10 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:48:57
+Jan 20 23:50:10 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 19850
+Jan 20 23:50:10 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:53:09 10.71.60.0 a2540500 Connection from 10.71.60.0 port 39044 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:53:10 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 39044 ssh2
+Jan 20 23:53:11 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 39044 id 0
+Jan 20 23:53:11 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:53:13 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:53:14 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168943
+Jan 20 23:53:14 10.71.60.0 a2540500 [10.71.60.0|put|1|168943|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:53:15 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:52:59
+Jan 20 23:54:15 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 39044
+Jan 20 23:54:15 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 20 23:55:16 10.71.60.0 a2540500 Connection from 10.71.60.0 port 16684 on 74.208.59.93 port 22 rdomain ""
+Jan 20 23:55:17 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 16684 ssh2
+Jan 20 23:55:18 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 16684 id 0
+Jan 20 23:55:18 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 20 23:55:20 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:55:22 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168943
+Jan 20 23:55:22 10.71.60.0 a2540500 [10.71.60.0|put|2|168943|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:55:22 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:55:10
+Jan 20 23:56:02 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:56:03 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168943
+Jan 20 23:56:03 10.71.60.0 a2540500 [10.71.60.0|put|1|168943|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:56:04 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:55:59
+Jan 20 23:56:53 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 20 23:56:53 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168937
+Jan 20 23:56:53 10.71.60.0 a2540500 [10.71.60.0|put|0|168937|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 20 23:56:54 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260120-23:56:46
+Jan 20 23:57:55 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 16684
+Jan 20 23:57:55 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 21 00:23:12 10.71.60.0 a2540500 Connection from 10.71.60.0 port 44710 on 74.208.59.93 port 22 rdomain ""
+Jan 21 00:23:14 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 44710 ssh2
+Jan 21 00:23:14 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 44710 id 0
+Jan 21 00:23:14 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 21 00:23:17 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags READ mode 0666
+Jan 21 00:23:18 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 168937 written 0
+Jan 21 00:23:18 10.71.60.0 a2540500 [10.71.60.0|get|1|168937|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 21 00:23:29 10.71.60.0 a2540500 open "/New_cards/card_creation_script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Jan 21 00:23:30 10.71.60.0 a2540500 close "/New_cards/card_creation_script.js" bytes read 0 written 168946
+Jan 21 00:23:30 10.71.60.0 a2540500 [10.71.60.0|put|1|168946|0|0|0|2f4e65775f63617264732f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 21 00:23:31 10.71.60.0 a2540500 set "/New_cards/card_creation_script.js" modtime 20260121-00:23:23
+Jan 21 00:24:31 10.71.60.0 a2540500 Connection closed by 10.71.60.0 port 44710
+Jan 21 00:24:31 10.71.60.0 a2540500 session closed for local user a2540500 from [10.71.60.0]
+Jan 21 00:25:24 10.71.60.0 a2540500 Connection from 10.71.60.0 port 55212 on 74.208.59.93 port 22 rdomain ""
+Jan 21 00:25:25 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 55212 ssh2
+Jan 21 00:25:24 10.71.60.0 a2540500 Connection from 10.71.60.0 port 55218 on 74.208.59.93 port 22 rdomain ""
+Jan 21 00:25:25 10.71.60.0 a2540500 Accepted password for a2540500 from 10.71.60.0 port 55218 ssh2
+Jan 21 00:25:26 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 55212 id 0
+Jan 21 00:25:26 10.71.60.0 a2540500 Starting session: subsystem 'sftp' for a2540500 from 10.71.60.0 port 55218 id 0
+Jan 21 00:25:26 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 21 00:25:26 10.71.60.0 a2540500 session opened for local user a2540500 from [10.71.60.0]
+Jan 21 00:25:26 - a2540500 sent status No such file
+Jan 21 00:25:28 10.71.60.0 a2540500 open "/view-card.php" flags READ mode 0666
+Jan 21 00:25:28 10.71.60.0 a2540500 open "/backup_17_01_26.zip" flags READ mode 0666
+Jan 21 00:25:29 10.71.60.0 a2540500 close "/view-card.php" bytes read 11529 written 0
+Jan 21 00:25:29 10.71.60.0 a2540500 [10.71.60.0|get|1|11529|0|0|0|2f766965772d636172642e706870|]
+Jan 21 00:25:30 10.71.60.0 a2540500 open "/update_database.php" flags READ mode 0666
+Jan 21 00:25:30 10.71.60.0 a2540500 close "/update_database.php" bytes read 2511 written 0
+Jan 21 00:25:30 10.71.60.0 a2540500 [10.71.60.0|get|0|2511|0|0|0|2f7570646174655f64617461626173652e706870|]
+Jan 21 00:25:31 10.71.60.0 a2540500 open "/test_qr_simple.php" flags READ mode 0666
+Jan 21 00:25:33 10.71.60.0 a2540500 close "/test_qr_simple.php" bytes read 2631 written 0
+Jan 21 00:25:33 10.71.60.0 a2540500 [10.71.60.0|get|2|2631|0|0|0|2f746573745f71725f73696d706c652e706870|]
+Jan 21 00:25:33 10.71.60.0 a2540500 open "/test_qr.php" flags READ mode 0666
+Jan 21 00:25:34 10.71.60.0 a2540500 close "/test_qr.php" bytes read 2989 written 0
+Jan 21 00:25:34 10.71.60.0 a2540500 [10.71.60.0|get|1|2989|0|0|0|2f746573745f71722e706870|]
+Jan 21 00:25:35 10.71.60.0 a2540500 open "/test_card_editor.php" flags READ mode 0666
+Jan 21 00:25:36 10.71.60.0 a2540500 close "/test_card_editor.php" bytes read 4338 written 0
+Jan 21 00:25:36 10.71.60.0 a2540500 [10.71.60.0|get|1|4338|0|0|0|2f746573745f636172645f656469746f722e706870|]
+Jan 21 00:25:37 10.71.60.0 a2540500 open "/style.css" flags READ mode 0666
+Jan 21 00:25:38 10.71.60.0 a2540500 close "/style.css" bytes read 29183 written 0
+Jan 21 00:25:38 10.71.60.0 a2540500 [10.71.60.0|get|1|29183|0|0|0|2f7374796c652e637373|]
+Jan 21 00:25:39 10.71.60.0 a2540500 open "/setup_database.php" flags READ mode 0666
+Jan 21 00:25:40 10.71.60.0 a2540500 close "/setup_database.php" bytes read 5021 written 0
+Jan 21 00:25:40 10.71.60.0 a2540500 [10.71.60.0|get|0|5021|0|0|0|2f73657475705f64617461626173652e706870|]
+Jan 21 00:25:40 10.71.60.0 a2540500 open "/mbg_1000000187.jpg" flags READ mode 0666
+Jan 21 00:25:42 10.71.60.0 a2540500 close "/mbg_1000000187.jpg" bytes read 717124 written 0
+Jan 21 00:25:42 10.71.60.0 a2540500 [10.71.60.0|get|2|717124|0|0|0|2f6d62675f313030303030303138372e6a7067|]
+Jan 21 00:25:43 10.71.60.0 a2540500 open "/logo.png" flags READ mode 0666
+Jan 21 00:25:44 10.71.60.0 a2540500 close "/logo.png" bytes read 263988 written 0
+Jan 21 00:25:44 10.71.60.0 a2540500 [10.71.60.0|get|1|263988|0|0|0|2f6c6f676f2e706e67|]
+Jan 21 00:25:45 10.71.60.0 a2540500 open "/index.php" flags READ mode 0666
+Jan 21 00:25:46 10.71.60.0 a2540500 close "/index.php" bytes read 42673 written 0
+Jan 21 00:25:46 10.71.60.0 a2540500 [10.71.60.0|get|1|42673|0|0|0|2f696e6465782e706870|]
+Jan 21 00:25:47 10.71.60.0 a2540500 open "/fix_database.php" flags READ mode 0666
+Jan 21 00:25:48 10.71.60.0 a2540500 close "/fix_database.php" bytes read 1 written 0
+Jan 21 00:25:48 10.71.60.0 a2540500 [10.71.60.0|get|1|1|0|0|0|2f6669785f64617461626173652e706870|]
+Jan 21 00:25:48 10.71.60.0 a2540500 open "/favicon.png" flags READ mode 0666
+Jan 21 00:25:49 10.71.60.0 a2540500 close "/favicon.png" bytes read 142778 written 0
+Jan 21 00:25:49 10.71.60.0 a2540500 [10.71.60.0|get|1|142778|0|0|0|2f66617669636f6e2e706e67|]
+Jan 21 00:25:50 10.71.60.0 a2540500 open "/dashboard_errors.log" flags READ mode 0666
+Jan 21 00:25:51 10.71.60.0 a2540500 close "/dashboard_errors.log" bytes read 4912 written 0
+Jan 21 00:25:51 10.71.60.0 a2540500 [10.71.60.0|get|1|4912|0|0|0|2f64617368626f6172645f6572726f72732e6c6f67|]
+Jan 21 00:25:52 10.71.60.0 a2540500 open "/CARD_EDITOR_README.md" flags READ mode 0666
+Jan 21 00:25:53 10.71.60.0 a2540500 close "/CARD_EDITOR_README.md" bytes read 8140 written 0
+Jan 21 00:25:53 10.71.60.0 a2540500 [10.71.60.0|get|1|8140|0|0|0|2f434152445f454449544f525f524541444d452e6d64|]
+Jan 21 00:25:53 10.71.60.0 a2540500 open "/CARD_EDITING_README.md" flags READ mode 0666
+Jan 21 00:25:54 10.71.60.0 a2540500 close "/CARD_EDITING_README.md" bytes read 1 written 0
+Jan 21 00:25:54 10.71.60.0 a2540500 [10.71.60.0|get|1|1|0|0|0|2f434152445f45444954494e475f524541444d452e6d64|]
+Jan 21 00:25:55 10.71.60.0 a2540500 open "/card_creation_script.js" flags READ mode 0666
+Jan 21 00:25:56 10.71.60.0 a2540500 close "/card_creation_script.js" bytes read 161042 written 0
+Jan 21 00:25:56 10.71.60.0 a2540500 [10.71.60.0|get|1|161042|0|0|0|2f636172645f6372656174696f6e5f7363726970742e6a73|]
+Jan 21 00:25:57 10.71.60.0 a2540500 open "/bg_1000000186.jpg" flags READ mode 0666
+Jan 21 00:25:58 10.71.60.0 a2540500 close "/bg_1000000186.jpg" bytes read 683067 written 0
+Jan 21 00:25:58 10.71.60.0 a2540500 [10.71.60.0|get|1|683067|0|0|0|2f62675f313030303030303138362e6a7067|]
+Jan 21 00:25:59 10.71.60.0 a2540500 open "/autism_card_back_side_infinity_sign.svg" flags READ mode 0666
+Jan 21 00:26:00 10.71.60.0 a2540500 close "/autism_card_back_side_infinity_sign.svg" bytes read 106034 written 0
+Jan 21 00:26:00 10.71.60.0 a2540500 [10.71.60.0|get|1|106034|0|0|0|2f61757469736d5f636172645f6261636b5f736964655f696e66696e6974795f7369676e2e737667|]
+Jan 21 00:26:01 10.71.60.0 a2540500 open "/autism_card_back_side_infinity_sign.jpg" flags READ mode 0666
+Jan 21 00:26:02 10.71.60.0 a2540500 close "/autism_card_back_side_infinity_sign.jpg" bytes read 939030 written 0
+Jan 21 00:26:02 10.71.60.0 a2540500 [10.71.60.0|get|1|939030|0|0|0|2f61757469736d5f636172645f6261636b5f736964655f696e66696e6974795f7369676e2e6a7067|]
+Jan 21 00:26:03 10.71.60.0 a2540500 open "/autism_card_back-side_puzzle_sign.jpg" flags READ mode 0666
+Jan 21 00:26:04 10.71.60.0 a2540500 close "/autism_card_back-side_puzzle_sign.jpg" bytes read 922042 written 0
+Jan 21 00:26:04 10.71.60.0 a2540500 [10.71.60.0|get|1|922042|0|0|0|2f61757469736d5f636172645f6261636b2d736964655f70757a7a6c655f7369676e2e6a7067|]
+Jan 21 00:26:05 10.71.60.0 a2540500 open "/6.jpeg" flags READ mode 0666
+Jan 21 00:26:07 10.71.60.0 a2540500 close "/6.jpeg" bytes read 1918659 written 0
+Jan 21 00:26:07 10.71.60.0 a2540500 [10.71.60.0|get|2|1918659|0|0|0|2f362e6a706567|]
+Jan 21 00:26:08 10.71.60.0 a2540500 open "/5.jpeg" flags READ mode 0666
+Jan 21 00:26:09 10.71.60.0 a2540500 close "/5.jpeg" bytes read 2025502 written 0
+Jan 21 00:26:09 10.71.60.0 a2540500 [10.71.60.0|get|1|2025502|0|0|0|2f352e6a706567|]
+Jan 21 00:26:10 10.71.60.0 a2540500 open "/4.jpeg" flags READ mode 0666
+Jan 21 00:26:11 10.71.60.0 a2540500 close "/4.jpeg" bytes read 1275866 written 0
+Jan 21 00:26:11 10.71.60.0 a2540500 [10.71.60.0|get|1|1275866|0|0|0|2f342e6a706567|]
+Jan 21 00:26:12 10.71.60.0 a2540500 open "/3.jpeg" flags READ mode 0666
+Jan 21 00:26:13 10.71.60.0 a2540500 close "/3.jpeg" bytes read 1419546 written 0
+Jan 21 00:26:13 10.71.60.0 a2540500 [10.71.60.0|get|1|1419546|0|0|0|2f332e6a706567|]
+Jan 21 00:26:14 10.71.60.0 a2540500 open "/2.jpeg" flags READ mode 0666
+Jan 21 00:26:16 10.71.60.0 a2540500 close "/2.jpeg" bytes read 3282479 written 0
+Jan 21 00:26:16 10.71.60.0 a2540500 [10.71.60.0|get|2|3282479|0|0|0|2f322e6a706567|]
+Jan 21 00:26:17 10.71.60.0 a2540500 open "/1000001754.jpg" flags READ mode 0666
+Jan 21 00:26:17 10.71.60.0 a2540500 close "/1000001754.jpg" bytes read 444577 written 0
+Jan 21 00:26:17 10.71.60.0 a2540500 [10.71.60.0|get|0|444577|0|0|0|2f313030303030313735342e6a7067|]
+Jan 21 00:26:18 10.71.60.0 a2540500 open "/1.jpeg" flags READ mode 0666
+Jan 21 00:26:21 10.71.60.0 a2540500 close "/1.jpeg" bytes read 1973417 written 0
+Jan 21 00:26:21 10.71.60.0 a2540500 [10.71.60.0|get|3|1973417|0|0|0|2f312e6a706567|]
+Jan 21 00:26:23 10.71.60.0 a2540500 open "/logs/sftp.log.01.gz" flags READ mode 0666
+Jan 21 00:26:24 10.71.60.0 a2540500 close "/logs/sftp.log.01.gz" bytes read 179433 written 0
+Jan 21 00:26:24 10.71.60.0 a2540500 [10.71.60.0|get|1|179433|0|0|0|2f6c6f67732f736674702e6c6f672e30312e677a|]
+Jan 21 00:26:25 10.71.60.0 a2540500 open "/logs/access.log.03.1.gz" flags READ mode 0666
+Jan 21 00:26:25 10.71.60.0 a2540500 close "/logs/access.log.03.1.gz" bytes read 7694 written 0
+Jan 21 00:26:25 10.71.60.0 a2540500 [10.71.60.0|get|0|7694|0|0|0|2f6c6f67732f6163636573732e6c6f672e30332e312e677a|]
+Jan 21 00:26:26 10.71.60.0 a2540500 open "/logs/access.log.48.gz" flags READ mode 0666
+Jan 21 00:26:27 10.71.60.0 a2540500 close "/logs/access.log.48.gz" bytes read 56737 written 0
+Jan 21 00:26:27 10.71.60.0 a2540500 [10.71.60.0|get|1|56737|0|0|0|2f6c6f67732f6163636573732e6c6f672e34382e677a|]
+Jan 21 00:26:28 10.71.60.0 a2540500 open "/logs/sftp.log.49.gz" flags READ mode 0666
+Jan 21 00:26:29 10.71.60.0 a2540500 close "/logs/sftp.log.49.gz" bytes read 8164 written 0
+Jan 21 00:26:29 10.71.60.0 a2540500 [10.71.60.0|get|1|8164|0|0|0|2f6c6f67732f736674702e6c6f672e34392e677a|]
+Jan 21 00:26:30 10.71.60.0 a2540500 open "/logs/sftp.log.02.gz" flags READ mode 0666
+Jan 21 00:26:31 10.71.60.0 a2540500 close "/logs/sftp.log.02.gz" bytes read 443 written 0
+Jan 21 00:26:31 10.71.60.0 a2540500 [10.71.60.0|get|1|443|0|0|0|2f6c6f67732f736674702e6c6f672e30322e677a|]
+Jan 21 00:26:32 10.71.60.0 a2540500 open "/logs/access.log.51.gz" flags READ mode 0666
+Jan 21 00:26:33 10.71.60.0 a2540500 close "/logs/access.log.51.gz" bytes read 18332 written 0
+Jan 21 00:26:33 10.71.60.0 a2540500 [10.71.60.0|get|1|18332|0|0|0|2f6c6f67732f6163636573732e6c6f672e35312e677a|]
+Jan 21 00:26:34 10.71.60.0 a2540500 open "/logs/sftp.log.52.gz" flags READ mode 0666
+Jan 21 00:26:35 10.71.60.0 a2540500 close "/logs/sftp.log.52.gz" bytes read 4410 written 0
+Jan 21 00:26:35 10.71.60.0 a2540500 [10.71.60.0|get|1|4410|0|0|0|2f6c6f67732f736674702e6c6f672e35322e677a|]
+Jan 21 00:26:36 10.71.60.0 a2540500 open "/logs/access.log.50.gz" flags READ mode 0666
+Jan 21 00:26:37 10.71.60.0 a2540500 close "/logs/access.log.50.gz" bytes read 47834 written 0
+Jan 21 00:26:37 10.71.60.0 a2540500 [10.71.60.0|get|1|47834|0|0|0|2f6c6f67732f6163636573732e6c6f672e35302e677a|]
+Jan 21 00:26:38 10.71.60.0 a2540500 open "/logs/access.log.04.3" flags READ mode 0666
+Jan 21 00:26:39 10.71.60.0 a2540500 close "/logs/access.log.04.3" bytes read 18068 written 0
+Jan 21 00:26:39 10.71.60.0 a2540500 [10.71.60.0|get|1|18068|0|0|0|2f6c6f67732f6163636573732e6c6f672e30342e33|]
+Jan 21 00:26:40 10.71.60.0 a2540500 open "/logs/sftp.log.48.gz" flags READ mode 0666
+Jan 21 00:26:41 10.71.60.0 a2540500 close "/logs/sftp.log.48.gz" bytes read 4943 written 0
+Jan 21 00:26:41 10.71.60.0 a2540500 [10.71.60.0|get|1|4943|0|0|0|2f6c6f67732f736674702e6c6f672e34382e677a|]
+Jan 21 00:26:42 10.71.60.0 a2540500 open "/logs/access.log.03.7.gz" flags READ mode 0666
+Jan 21 00:26:43 10.71.60.0 a2540500 close "/logs/access.log.03.7.gz" bytes read 5349 written 0
+Jan 21 00:26:43 10.71.60.0 a2540500 [10.71.60.0|get|1|5349|0|0|0|2f6c6f67732f6163636573732e6c6f672e30332e372e677a|]
+Jan 21 00:26:44 10.71.60.0 a2540500 open "/logs/sftp.log" flags READ mode 0666
