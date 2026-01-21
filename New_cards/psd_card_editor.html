@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSD Card Editor - Virtual ID System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 320px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #e9ecef;
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 20px;
+            color: #495057;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .template-section {
+            margin-bottom: 30px;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .template-card {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            background: white;
+        }
+
+        .template-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .template-card.active {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .template-card img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .template-card .template-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .controls-section {
+            margin-bottom: 20px;
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #495057;
+            font-size: 14px;
+        }
+
+        .control-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .control-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .photo-upload {
+            position: relative;
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .photo-upload:hover {
+            border-color: #667eea;
+            background: #f8f9fa;
+        }
+
+        .photo-upload input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .photo-preview {
+            max-width: 100%;
+            max-height: 120px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary { background: #667eea; color: white; }
+        .btn-success { background: #28a745; color: white; }
+        .btn-warning { background: #ffc107; color: #212529; }
+        .btn-danger { background: #dc3545; color: white; }
+
+        .btn:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .editor-area {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-editor {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card-preview {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: crosshair;
+        }
+
+        .editable-text {
+            position: absolute;
+            padding: 2px 4px;
+            background: transparent;
+            border: 2px dashed transparent;
+            border-radius: 4px;
+            cursor: text;
+            font-family: Arial, sans-serif;
+            color: #333;
+            min-width: 50px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .editable-text:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .editable-text.editing {
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .editable-photo {
+            position: absolute;
+            border: 2px dashed transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .editable-photo:hover {
+            border-color: #28a745;
+        }
+
+        .editable-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder-photo {
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .qr-code {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #666;
+        }
+
+        .card-actions {
+            padding: 20px;
+            border-top: 1px solid #e9ecef;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .status-bar {
+            background: #2c5aa0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+
+            .template-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .template-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-layer-group"></i> PSD Card Editor</h1>
+            <p>Click to edit text and photos on pre-designed templates</p>
+        </header>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="template-section">
+                    <h3><i class="fas fa-images"></i> Card Template</h3>
+                    <div class="template-grid">
+                        <div class="template-card active" data-template="psd-card">
+                            <img src="psd_files/Front.jpg" alt="PSD Card Template">
+                            <div class="template-name">PSD Card Template</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls-section">
+                    <h3><i class="fas fa-cog"></i> Card Settings</h3>
+                    
+                    <div class="control-group">
+                        <label>Card ID (Auto-generated)</label>
+                        <input type="text" class="control-input" id="cardId" readonly>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Upload Photo</label>
+                        <div class="photo-upload" id="photoUpload">
+                            <input type="file" accept="image/*" id="photoInput">
+                            <i class="fas fa-camera"></i>
+                            <p>Click to upload photo</p>
+                            <img id="photoPreview" class="photo-preview" style="display: none;">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Card Side</label>
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <button class="btn btn-primary" id="showFront" style="flex: 1;">
+                                <i class="fas fa-id-card"></i> Front
+                            </button>
+                            <button class="btn btn-secondary" id="showBack" style="flex: 1;">
+                                <i class="fas fa-id-card"></i> Back
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <button class="btn btn-primary" id="generateQR">
+                            <i class="fas fa-qrcode"></i> Generate QR Code
+                        </button>
+                        <button class="btn btn-success" id="saveCard">
+                            <i class="fas fa-save"></i> Save Card
+                        </button>
+                        <button class="btn btn-warning" id="downloadCard">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="editor-area">
+                <div class="card-editor">
+                    <div class="card-preview" id="cardPreview">
+                        <!-- Editable elements will be dynamically added here -->
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button class="btn btn-success" id="resetCard">
+                            <i class="fas fa-refresh"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-bar">
+            <span id="statusText">Select a template to start editing</span>
+        </div>
+    </div>
+
+    <script src="psd_card_editor.js"></script>
+</body>
+</html>
